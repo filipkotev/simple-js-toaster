@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <symbol id="error" viewbox="0 0 24 24">
+    <g id="Layer_1" data-name="Layer 1">
+      <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm5.89,14.2L16.2,17.89,12,13.68,7.8,17.89,6.11,16.2,10.32,12,6.11,7.8,7.8,6.11,12,10.32l4.2-4.21L17.89,7.8,13.68,12Z"/>
+    </g>
+  </symbol>
+  <symbol id="success" viewbox="0 0 24 24">
+    <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2ZM10.7,17.15,5.49,12l1.74-1.72,3.47,3.44,6.08-6.87,1.73,1.71Z"/>
+  </symbol>
+  <symbol id="info" viewbox="0 0 24 24">
+    <g id="I_thin">
+      <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm1,15H11V11h2Zm0-8H11V7h2Z"/>
+    </g>
+  </symbol>
+  <symbol id="attention" viewbox="0 0 24 24">
+    <g id="Layer_1" data-name="Layer 1">
+      <path d="M12,1,24,22H0ZM11,9v6h2V9Zm0,8v2h2V17Z"/></g>
+  </symbol>
+  <symbol id="close" viewbox="0 0 24 24">
+    <g id="close"><path d="M22,4,20,2l-8,8L4,2,2,4l8,8L2,20l2,2,8-8,8,8,2-2-8-8Z"/></g>
+  </symbol>
+</svg>
