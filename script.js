@@ -5,8 +5,8 @@ toastsContainer.className = 'toasts-container';
 function createToasts(msg, type) {
 
   let div = document.createElement('div');
-  div.id = 'toast-wrapper';
-  div.className = `show ${type}`;
+//  div.className = 'toast-wrapper';
+  div.className = `toast-wrapper show ${type}`;
   
   //Toast type icon with its attributes
   let toastIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg'),
@@ -34,7 +34,7 @@ function createToasts(msg, type) {
   closeBtn.appendChild(closeIcon);
   closeBtn.className = 'toast-close';
 
-  
+
   div.appendChild(toastIcon);
   div.appendChild(textSpan);
   div.appendChild(closeBtn);
@@ -47,3 +47,21 @@ function createToasts(msg, type) {
     div.parentNode.removeChild(div);
   }, 3000);
 }
+
+// Create custom event and handle the listener
+
+const BUTTONS = document.querySelectorAll('button');
+//console.log(BUTTONS);
+for (let bIdx = 0; bIdx < BUTTONS.length; bIdx++) {
+  let button = BUTTONS[bIdx];
+
+  button.addEventListener('click', function () {
+    dispatchEvent(new CustomEvent('toast'));
+  })
+};
+
+window.addEventListener('toast', function () {
+  setTimeout (function () {
+    createToasts('Succes Message', 'attention');
+  },200);
+});

@@ -14,7 +14,7 @@ html, body {
   bottom: 30px;
 }
 
-#toast-wrapper {
+.toast-wrapper {
 /*  visibility: hidden;*/
   height: 0;
   color: white;
@@ -24,11 +24,11 @@ html, body {
   display: flex;
   align-items: center;
 }
-#toast-wrapper.show {
+.toast-wrapper.show {
 /*  visibility: visible;*/
   height: 30px;
 }
-#toast-wrapper.hide {
+.toast-wrapper.hide {
 /*  visibility: hidden;*/
   height: 0;
   transition: 1s ease-in-out;
